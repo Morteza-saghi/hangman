@@ -3,6 +3,7 @@ from random import randint as rand
 randomNum = rand(0, len(words) - 1)
 chosenWord = words[randomNum]
 # print(chosenWord)
+
 temp = str()
 
 for i in chosenWord:
@@ -13,6 +14,8 @@ chosedLetters = list()
 
 chosenWord = list(chosenWord)
 temp3 = str()
+
+# use this function to validate the input and status of the game
 
 
 def complition():
@@ -26,6 +29,8 @@ def complition():
     print(temp2)
     temp3 = temp2
 
+# use this function to see if the game is done or not
+
 
 def gameFinished():
     theFinish = bool()
@@ -37,6 +42,7 @@ def gameFinished():
     return theFinish
 
 
+# we stay in this loop to keep playing the game
 while healthBar > 0:
     if gameFinished() == True:
         print("You Have Won Bitch")
